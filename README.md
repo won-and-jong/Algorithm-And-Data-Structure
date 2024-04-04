@@ -1,7 +1,35 @@
-# Algorithm-And-Data-Structure
+# Algorithm Study
 
-- [백준 그룹](https://www.acmicpc.net/group/ranklist/20655)
-- [바킹독 문제집](https://www.acmicpc.net/workbook/by/BaaaaaaaaaaarkingDog/1)
+## 소개
+알고리즘 문제 스터디를 위한 저장소입니다. \
+[바킹독 문제집](https://www.acmicpc.net/workbook/by/BaaaaaaaaaaarkingDog/1)을 기반으로 진행하며, [백준 그룹](https://www.acmicpc.net/group/ranklist/20655)에 올려놓은 자료 구조 직접 구현 및 문제 풀이를 목표로 합니다.
+
+## 문제 해결 코드 제출 절차
+1. **브랜치 생성**: 자신의 닉네임에 해당하는 브랜치를 생성합니다. 예: `git checkout -b [본인 닉네임]`
+2. **문제 해결**: 본인의 폴더 내에 문제 해결 코드를 추가합니다.
+3. **Pull Request (PR) 생성**: 생성한 브랜치에서 `main` 브랜치로 PR을 생성합니다. PR 템플릿에 따라 작성해주세요.
+4. **코드 리뷰 요청**: PR 생성 시 랜덤으로 2명의 멤버를 리뷰어로 지정하며, 리뷰어가 코드 리뷰를 진행을 다 하면 본인이 직접 Merge합니다.
+
+## 코드 리뷰
+- 리뷰어는 코드의 가독성, 효율성, 코딩 스타일 등을 중점으로 리뷰합니다.
+- 리뷰어는 개선 사항이나 질문을 자유롭게 코멘트할 수 있습니다.
+- PR 제출자는 리뷰어의 피드백을 바탕으로 코드를 수정하고 다시 리뷰를 요청할 수 있습니다.
+
+## Merge 규칙
+- 모든 코드 리뷰가 완료되고, 최소 2명의 리뷰어로부터 승인을 받으면, PR은 `main` 브랜치로 merge됩니다.
+
+## 규칙 및 지침
+- 서로 존중하는 태도를 유지하고, 건설적인 피드백을 제공해주세요.
+- 문제 해결 과정에서 다른 참가자의 코드를 참고할 수 있지만, 복사는 피해주세요.
+
+## 참고 사항
+- 이 가이드라인은 지속적으로 업데이트될 수 있습니다. 개선 사항이나 제안은 언제든지 환영입니다.
+
+## 자료구조 직접 구현 시 참고
+- [geeksforgeeks](https://www.geeksforgeeks.org/singly-linked-list-definition-meaning-dsa/)
+- [tutorialspoint](https://www.tutorialspoint.com/data_structures_algorithms/linked_list_algorithms.htm)
+
+## 문제집 진행도
 
 | 번호 | 주제 | 진행도 |
 | :--: | :--: | :--: |
@@ -23,20 +51,20 @@
 | 0x0F | [정렬 II](https://www.acmicpc.net/workbook/view/7318) | 0% |
 | 0x10 | [다이나믹 프로그래밍](https://www.acmicpc.net/workbook/view/7319) | 0% |
 | 0x11 | [그리디](https://www.acmicpc.net/workbook/view/7320) | 0% |
-| 0x12 | [수학](https://www.acmicpc.net/workbook/view/7321) | 0% |
-| 0x13 | [이분탐색](https://www.acmicpc.net/workbook/view/7322) | 0% |
-| 0x14 | [투 포인터](https://www.acmicpc.net/workbook/view/7323) | 0% |
-| 0x15 | [해시](https://www.acmicpc.net/workbook/view/7324) | 0% |
-| 0x16 | [이진 검색 트리](https://www.acmicpc.net/workbook/view/7325) | 0% |
-| 0x17 | [우선순위 큐](https://www.acmicpc.net/workbook/view/7326) | 0% |
-| 0x18 | [그래프](https://www.acmicpc.net/workbook/view/7327) | 0% |
-| 0x19 | [트리](https://www.acmicpc.net/workbook/view/7328) | 0% |
-| 0x1A | [위상 정렬](https://www.acmicpc.net/workbook/view/7329) | 0% |
-| 0x1B | [최소 신장 트리](https://www.acmicpc.net/workbook/view/7330) | 0% |
-| 0x1C | [플로이드 알고리즘](https://www.acmicpc.net/workbook/view/7331) | 0% |
-| 0x1D | [다익스트라 알고리즘](https://www.acmicpc.net/workbook/view/7332) | 0% |
-| 0x1E | [KMP](https://www.acmicpc.net/workbook/view/7332) | 0% |
-| 0x1F | [트라이](https://www.acmicpc.net/workbook/view/7333) | 0% |
-| Appendix A | [문자열 기초](https://www.acmicpc.net/workbook/view/7333) | 0% |
+| 0x12 | [수학](https://www.acmicpc.net/workbook/view/8174) | 0% |
+| 0x13 | [이분탐색](https://www.acmicpc.net/workbook/view/8400) | 0% |
+| 0x14 | [투 포인터](https://www.acmicpc.net/workbook/view/8709) | 0% |
+| 0x15 | [해시](https://www.acmicpc.net/workbook/view/9063) | 0% |
+| 0x16 | [이진 검색 트리](https://www.acmicpc.net/workbook/view/9346) | 0% |
+| 0x17 | [우선순위 큐](https://www.acmicpc.net/workbook/view/9502) | 0% |
+| 0x18 | [그래프](https://www.acmicpc.net/workbook/view/9562) | 0% |
+| 0x19 | [트리](https://www.acmicpc.net/workbook/view/9657) | 0% |
+| 0x1A | [위상 정렬](https://www.acmicpc.net/workbook/view/9738) | 0% |
+| 0x1B | [최소 신장 트리](https://www.acmicpc.net/workbook/view/9907) | 0% |
+| 0x1C | [플로이드 알고리즘](https://www.acmicpc.net/workbook/view/10318) | 0% |
+| 0x1D | [다익스트라 알고리즘](https://www.acmicpc.net/workbook/view/10433) | 0% |
+| 0x1E | [KMP](https://www.acmicpc.net/workbook/view/12205) | 0% |
+| 0x1F | [트라이](https://www.acmicpc.net/workbook/view/12649) | 0% |
+| Appendix A | [문자열 기초](https://www.acmicpc.net/workbook/view/14409) | 0% |
 | Appendix B | 동적 배열 (문제집 X) | |
-| Appendix C | [비트마스킹](workbook/Appendix%20C.md) | 0% |
+| Appendix C | [비트마스킹]([workbook/Appendix%20C.md](https://www.acmicpc.net/workbook/view/18875)) | 0% |
