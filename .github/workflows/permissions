@@ -1,0 +1,3 @@
+permissions:
+  pull-requests: write
+  contents: read
