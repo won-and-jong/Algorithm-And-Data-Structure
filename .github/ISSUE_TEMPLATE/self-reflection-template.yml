@@ -1,0 +1,32 @@
+name: "반성문"
+description: 반성문 작성 양식입니다.
+labels: ["reflection"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        작성 예시 : "2024년 14주차 반성문"
+  - type: textarea
+    id: unresolved-issue
+    attributes:
+      label: 해결하지 못한 문제
+      description: 해결하지 못한 문제를 적어주세요.
+      placeholder: 여기에 문제를 작성해 주세요.
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: 문제 해결하지 못한 이유
+      description: 문제를 해결하지 못한 이유를 구체적으로 적어주세요.
+      placeholder: 여기에 이유를 작성해 주세요.
+    validations:
+      required: true
+  - type: textarea
+    id: improvement-plan
+    attributes:
+      label: 개선 계획
+      description: 앞으로 어떻게 개선할 계획인지 구체적으로 적어주세요.
+      placeholder: 여기에 개선 계획을 작성해 주세요.
+    validations:
+      required: true
