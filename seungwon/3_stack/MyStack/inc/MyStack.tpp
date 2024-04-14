@@ -1,32 +1,32 @@
 #include "MyStack.hpp"
 
 template <typename T>
-MyStack::MyStack() 
+MyStack<T>::MyStack() 
 : nData() {};
 template <typename T>
-MyStack::~MyStack() {};
+MyStack<T>::~MyStack() {};
 template <typename T>
-T& MyStack::top(void)
+T& MyStack<T>::top(void)
 {
     return (nData.back());
 };
 template <typename T>
-void MyStack:: push(T data)
+void MyStack<T>:: push(T data)
 {
     nData.push_back(data);
 };
 template <typename T>
-void MyStack:: pop(void)
+void MyStack<T>:: pop(void)
 {
-    nData.erase(nData.rbegin());
+    nData.erase(nData.end() - 1);
 };
 template <typename T>
-size_t MyStack:: size(void) const
+size_t MyStack<T>:: size(void) const
 {
     return (nData.size());
 };
 template <typename T>
-bool MyStack:: empty(void) const
+bool MyStack<T>:: empty(void) const
 {
     return (nData.empty());
 };

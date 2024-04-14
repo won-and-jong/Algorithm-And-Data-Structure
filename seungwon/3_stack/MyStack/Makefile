@@ -20,9 +20,8 @@ SRC_DIR := ./src
 INCLUDE := -I./inc
 
 SRC     := \
-		main.cpp \
-		MyStack.tpp
-OBJ     := $(addprefix $(SRC_DIR)/, $(SRC:.cpp=.o)) $(addprefix $(SRC_DIR)/, $(SRC:.tpp=.o))
+		main.cpp 
+OBJ     := $(addprefix $(SRC_DIR)/, $(SRC:.cpp=.o))
 
 all: $(NAME)
 	@echo "$(GREEN)$(NAME) created successfully$(RESET)"
@@ -32,10 +31,6 @@ $(NAME): $(OBJ)
 	@echo "$(WHITE)Creating $@$(RESET)"
 
 %.o: %.cpp
-	@$(CXX) $(CFLAGS) -c $< -o $@ $(INCLUDE)
-	@echo "$(CYAN)Compiled:$(RESET) $< -> $@"
-
-%.o: %.tpp
 	@$(CXX) $(CFLAGS) -c $< -o $@ $(INCLUDE)
 	@echo "$(CYAN)Compiled:$(RESET) $< -> $@"
 
