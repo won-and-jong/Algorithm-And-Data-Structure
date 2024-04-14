@@ -3,49 +3,45 @@
 #include <stack>
 using namespace std;
 
+#define INDEX first
+#define HEIGHT second
 #define ll long long
-#define f(i, n) for (int i = 0; i < n; i++)
+#define f(i, n) for (int i = 1; i <= n; i++)
 
-int find_tower(stack<int> st)
-{
-	int seeker = st.top();
-	
-	while (!st.empty())
-	{
-		if (seeker < st.top())
-		{
-			return st.size();
-		}
-		st.pop();
-		st.
-	}
-	return 0;
-}
+const int NO_SIGNAL = 0;
 
 int	main(void)
 {
-	ios::sync_with_stdio(false), cin.tie(nullptr);
+    ios::sync_with_stdio(false), cin.tie(nullptr);
 
-	int n; cin >> n;
-	stack<int> st;
-	vector<int> ans;
+    int n; cin >> n;
+    stack<pair<int, int> > st;
+    vector<int> ans;
 
-	f(i, n)
-	{
-		int height; cin >> height;
-		st.push(height);
-	}
-
-	while (!st.empty())
-	{
-		ans.push_back(find_tower(st));
-		st.pop();
-	}
-	
-	for (vector<int>::reverse_iterator rit = ans.rbegin(); rit != ans.rend(); ++rit)
-	{
-		cout << *rit << ' ';
-	}
-	cout << endl;
-	return 0;
+    f(i, n)
+    {
+        int input; cin >> input;
+        while (!st.empty())
+        {
+            if (st.top().HEIGHT > input)
+            {
+                ans.push_back(st.top().INDEX);
+                st.push(make_pair(i, input));
+                break;
+            }
+            st.pop();
+        }
+        if (st.empty())
+        {
+            ans.push_back(NO_SIGNAL);
+            st.push(make_pair(i, input));
+        }
+    }
+    
+    for (vector<int>::iterator it = ans.begin(); it != ans.end(); ++it)
+    {
+        cout << *it << ' ';
+    }
+    cout << endl;
+    return 0;
 }

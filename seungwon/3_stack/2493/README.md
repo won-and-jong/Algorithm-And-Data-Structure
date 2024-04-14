@@ -72,7 +72,7 @@ int	main(void)
 	return 0;
 }
 ```
-너무 날로먹는 코드를 짜서 시간초과가 났다. find_tower() 함수가 O(n)이라서 그런 것 같다. 이 함수를 O(1)로 만들어보자.
+너무 날로먹는 코드를 짜서 시간초과가 났다. O(n^2)의 시간복잡도를 가지고 있었기 때문이다. 이를 O(n)으로 ~~줄여보자.~~ 줄여서 통과했다!
 
 ## References
 - [c++ rbegin](https://cplusplus.com/reference/vector/vector/rbegin/)
