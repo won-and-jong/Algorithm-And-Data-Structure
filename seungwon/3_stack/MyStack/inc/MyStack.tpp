@@ -4,14 +4,26 @@ template <typename T>
 MyStack<T>::MyStack() 
 : nData() {};
 template <typename T>
+MyStack<T>::MyStack(const MyStack<T>& rhs) 
+: nData(rhs.nData) {};
+template <typename T>
 MyStack<T>::~MyStack() {};
+template <typename T>
+MyStack<T> MyStack<T>::operator=(const MyStack<T>& rhs)
+{
+    if (*this != rhs)
+    {
+        nData = rhs.nData;
+    }
+    return *this;
+}
 template <typename T>
 T& MyStack<T>::top(void)
 {
     return (nData.back());
 };
 template <typename T>
-void MyStack<T>:: push(T data)
+void MyStack<T>:: push(const T& data)
 {
     nData.push_back(data);
 };

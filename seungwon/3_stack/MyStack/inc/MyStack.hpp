@@ -10,9 +10,11 @@ private:
     std::vector<T> nData;
 public:
     MyStack();
+    MyStack(const MyStack<T>& rhs);
     ~MyStack();
+    MyStack<T> operator=(const MyStack<T>& rhs);
     T& top(void);
-    void push(T data);
+    void push(const T& data);
     void pop(void);
     size_t size(void) const;
     bool empty(void) const;

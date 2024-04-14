@@ -4,6 +4,7 @@
 # vscode
 .vscode/
 
-# executables
+# C/C++
+*.o
 a.out
 a.out.dSYM/
