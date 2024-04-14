@@ -1,6 +1,6 @@
 .SUFFIXES : .cpp .tpp .o
 
-NAME    := myStack
+NAME    := myVector
 CXX     := c++
 CFLAGS  := -Werror -Wall -Wextra
 DEBUG   := -g
