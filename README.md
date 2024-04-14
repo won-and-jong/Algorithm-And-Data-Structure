@@ -25,15 +25,12 @@
 - 서로 존중하는 태도를 유지하고, 건설적인 피드백을 제공해주세요.
 - 문제 해결 과정에서 다른 참가자의 코드를 참고할 수 있지만, 복사는 피해주세요.
 
-## 참고 사항
-- 이 가이드라인은 지속적으로 업데이트될 수 있습니다. 개선 사항이나 제안은 언제든지 환영입니다.
-
-## 자료구조 직접 구현 시 참고
+## 참고
 - [geeksforgeeks](https://www.geeksforgeeks.org/singly-linked-list-definition-meaning-dsa/)
 - [tutorialspoint](https://www.tutorialspoint.com/data_structures_algorithms/linked_list_algorithms.htm)
+- 풀고난 후 [바킹독 코드](https://github.com/encrypted-def/basic-algo-lecture/tree/master)를 참고하셔도 좋습니다.
 
 ## 문제집 진행도
-
 | 번호 | 주제 | 진행도 |
 | :--: | :--: | :--: |
 | 0x00 | 오리엔테이션 (문제집 X) | |
