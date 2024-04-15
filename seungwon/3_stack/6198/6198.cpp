@@ -12,7 +12,6 @@ int	main(void)
 
 	int n; cin >> n;
 	stack<int> st;
-	vector<int> v;
 	ll sum = 0;
 
 	f(i, n)
@@ -21,7 +20,18 @@ int	main(void)
 		if (st.empty())
 		{
 			st.push(input);
+			continue;
 		}
+		while (!st.empty() && st.top() <= input)
+		{
+			st.pop();
+		}
+		if (!st.empty() && st.top() > input)
+		{
+			sum += st.size();
+		}
+		st.push(input);
 	}
+	cout << sum << endl;
 	return 0;
 }
