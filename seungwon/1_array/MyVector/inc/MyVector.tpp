@@ -93,6 +93,38 @@ void MyVector<T>::pop_back(void)
     }
 }
 template <typename T>
+void MyVector<T>::insert(size_t idx, const T& data)
+{
+    if (mSize < idx)
+    {
+        idx = mSize;
+    }
+    if (mSize == mCapacity)
+    {
+        if (mCapacity == 0)
+        {
+            mCapacity = 1;
+        }
+        else
+        {
+            mCapacity *= 2;
+        }
+        T* newData = new T[mCapacity];
+        for (size_t i = 0; i < mSize; ++i)
+        {
+            newData[i] = mpData[i];
+        }
+        delete[] mpData;
+        mpData = newData;
+    }
+    for (size_t i = mSize; i > idx; --i)
+    {
+        mpData[i] = mpData[i - 1];
+    }
+    mpData[idx] = data;
+    ++mSize;
+}
+template <typename T>
 size_t MyVector<T>::size(void) 
 {
     return mSize;

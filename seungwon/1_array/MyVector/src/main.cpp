@@ -1,5 +1,6 @@
 #include <iostream>
 #include "MyVector.tpp"
+#include <vector>
 using namespace std;
 
 MyVector<int> v;
@@ -32,11 +33,18 @@ void capacity_test(void)
     {
         cout << v[i] << ' ';
     }
-    v.at(0);
+    cout << '\n';
+    v.insert(2, 999);
+    for (int i = 0; i < 100; i++)
+    {
+        cout << v[i] << ' ';
+    }
+    cout << '\n';
 }
 
 int	main(void)
 {
     capacity_test();
+    vector<int> a;
     return 0;
 }

@@ -20,6 +20,7 @@ public:
     T& at(size_t idx);
     void push_back(const T& data);
     void pop_back(void);
+    void insert(size_t idx, const T& data);
     size_t size(void);
     size_t capacity(void);
     void resize(size_t size);
