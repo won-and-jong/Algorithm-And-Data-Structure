@@ -80,7 +80,8 @@ public class BOJ1874 {
   }
 }
 /* 처음 제출할 때 StringBuilder를 쓰지 않고 BufferedWriter만을 사용했더니 출력초과가 났다.
-   그 이유에 대해 찾아보니 BufferedWriter는 버퍼를 이용해 버퍼가 가득차거나 flush를 호출 했을 때 출력하게 되는데
+   그 이유에 대해 찾아보니 BufferedWriter는 버퍼를 이용하는 출력 함수이다. 
+   버퍼가 가득차거나 flush를 호출 했을 때 출력하게 되는데
    n이 크고 불가능한 수열의 경우 NO를 출력하는 조건에 들어가기 전에 +-로 버퍼가 가득차
    +-를 출력해버리는 문제가 있었다. BufferedWriter의 기본 버퍼는 16384byte라고 하니 이 부분을 유의해서 풀자.
  */
