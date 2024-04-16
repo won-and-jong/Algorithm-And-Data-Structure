@@ -2,18 +2,22 @@
 #define MYLIST_HPP
 
 template <typename T>
+struct Node
+{
+    T Data;
+    Node* next;
+    Node* prev;
+};
+
+template <typename T>
 class MyList
 {
 private:
-    std::vector<T> nData;
+    Node<T> nHead;
 public:
     MyList();
     ~MyList();
-    T& top(void);
-    void push(T data);
-    void pop(void);
-    size_t size(void) const;
-    bool empty(void) const;
+    
 };
 
 #endif

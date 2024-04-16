@@ -4,6 +4,6 @@
 int	main(void)
 {
     std::list<int> l;
-    l.
+    l.push_back()
     return 0;
 }
