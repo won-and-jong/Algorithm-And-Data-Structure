@@ -17,11 +17,6 @@ int	main(void)
 	f(i, n)
 	{
 		int input; cin >> input;
-		if (st.empty())
-		{
-			st.push(input);
-			continue;
-		}
 		while (!st.empty() && st.top() <= input)
 		{
 			st.pop();

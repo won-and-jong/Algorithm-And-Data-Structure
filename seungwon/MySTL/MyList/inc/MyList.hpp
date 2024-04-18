@@ -13,11 +13,15 @@ template <typename T>
 class MyList
 {
 private:
-    Node<T> nHead;
+    Node<T>* nHead;
+
 public:
     MyList();
+    MyList(const MyList<T>& rhs);
     ~MyList();
-    
+    const MyList<T>& operator=(const MyList<T>& rhs);
+    void push_front(T& data);
+    void push_back(T& data);
 };
 
 #endif
