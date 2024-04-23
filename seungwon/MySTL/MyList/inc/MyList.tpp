@@ -3,7 +3,8 @@
 template <typename T>
 MyStack<T>::MyStack()
 : nData()
-, a(){};
+{
+}
 template <typename T>
 MyStack<T>::~MyStack(){};
 template <typename T>

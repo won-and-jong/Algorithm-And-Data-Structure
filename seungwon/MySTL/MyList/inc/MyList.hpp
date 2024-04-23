@@ -4,9 +4,9 @@
 template <typename T>
 struct Node
 {
-    T Data;
-    Node* next;
-    Node* prev;
+    T data;
+    Node<T>* next;
+    Node<T>* prev;
 };
 
 template <typename T>

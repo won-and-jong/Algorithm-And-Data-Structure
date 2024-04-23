@@ -12,31 +12,31 @@ int cur = 1;
 
 int	main(void)
 {
-	ios::sync_with_stdio(false), cin.tie(nullptr);
+    ios::sync_with_stdio(false), cin.tie(nullptr);
 
-	int n; cin >> n;
-	stack<int> st;
-	int input;
+    int n; cin >> n;
+    stack<int> st;
+    int input;
 
-	f(i, n)
-	{
-		cin >> input;
-		while (cur <= input)
-		{
-			st.push(cur++);
-			res += "+\n";
-		}
-		if (st.top() == input)
-		{
-			st.pop();
-			res += "-\n";;
-		}
-		else
-		{
-			res = "NO\n";
-			break;
-		}
-	}
-	cout << res;
-	return 0;
+    f(i, n)
+    {
+        cin >> input;
+        while (cur <= input)
+        {
+            st.push(cur++);
+            res += "+\n";
+        }
+        if (st.top() == input)
+        {
+            st.pop();
+            res += "-\n";;
+        }
+        else
+        {
+            res = "NO\n";
+            break;
+        }
+    }
+    cout << res;
+    return 0;
 }
