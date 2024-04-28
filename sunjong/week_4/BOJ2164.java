@@ -16,9 +16,10 @@ public class BOJ2164 {
         }
         while (q.size() > 1) {
             q.poll();
-            if (q.size() == 1) {
-                break;
-            }
+            // if (q.size() == 1) {
+            //     break;
+            // }
+            // 필요 없는 조건 삭제
             q.offer(q.poll());
         }
         bw.write(q.poll() + "");
