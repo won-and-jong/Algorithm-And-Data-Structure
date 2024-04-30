@@ -6,37 +6,27 @@ using namespace std;
 #define ll long long
 #define f(i, n) for (int i = 0; i < n; i++)
 
-stack<int> st;
-string res = "";
-int cur = 1;
-
 int	main(void)
 {
 	ios::sync_with_stdio(false), cin.tie(nullptr);
 
 	int n; cin >> n;
 	stack<int> st;
-	int input;
+	ll sum = 0;
 
 	f(i, n)
 	{
-		cin >> input;
-		while (cur <= input)
-		{
-			st.push(cur++);
-			res += "+\n";
-		}
-		if (st.top() == input)
+		int input; cin >> input;
+		while (!st.empty() && st.top() <= input)
 		{
 			st.pop();
-			res += "-\n";;
 		}
-		else
+		if (!st.empty() && st.top() > input)
 		{
-			res = "NO\n";
-			break;
+			sum += st.size();
 		}
+		st.push(input);
 	}
-	cout << res;
+	cout << sum << endl;
 	return 0;
 }
