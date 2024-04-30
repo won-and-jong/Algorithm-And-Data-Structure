@@ -20,7 +20,7 @@ int main()
 	for(int i=0;i<n;i++)
 	{
 		cin >> a;
-		// cout <<  i - l << "\n";
+		
 		if(!deq.empty() && deq.front().second <= i - l){
 			deq.pop_front();
 		}
